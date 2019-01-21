@@ -75,29 +75,29 @@
         <span>
           <img class="navbar-img" style="width: 60px; margin-right: 6px" src="img/Website Images/logo.png"/>
         </span>
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color: #FFFFFF;">Spoteria</a>
+        <a class="navbar-brand js-scroll-trigger" href="index.html#page-top" style="color: #FFFFFF;">Spoteria</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+              <a class="nav-link js-scroll-trigger" href="index.html#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#technology">Technology</a>
+              <a class="nav-link js-scroll-trigger" href="index.html#technology">Technology</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a class="nav-link js-scroll-trigger" href="index.html#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#blog">News</a>
+              <a class="nav-link js-scroll-trigger" href="index.html#blog">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -109,60 +109,70 @@
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <h1 class="text-uppercase" style="font-size: 3rem">
-              <strong>Get more out of your workout</strong>
+              <strong>Blog</strong>
             </h1>
             <hr style="border-color: #48a0ef">
           </div>
           <div class="col-lg-10 mx-auto">
-            <p class="mb-5" color="white">Our revolutionary smart mirror provides the ultimate workout experience helping you safely and effectively achieve your fitness goals.</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#features" style="background-color: #48a0ef">Learn More</a>
+            <p class="mb-5" color="white">Keep up-to-date with our weekly progress.</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#week1" style="background-color: #48a0ef">Start Reading</a>
           </div>
         </div>
       </div>
     </header>
-
-    <section class="bg-primary" id="about" style="background-color: #E8EAED !important">
+	
+    <section class="bg-primary" id="week1" style="background-color: #E8EAED !important">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">About</h2>
+            <h4 class="section-heading">January 21, 2019</h4>
             <hr class="my-4">
           </div>
         </div>
         <div = class="row">
-          <div class="col-lg-12 text-center">
-            <p class="mb-3"> The majority of gym members lack proper knowledge in at least one of the following key areas, including: speed of body movement, angles of joint rotation, correct exercise start/stop points, and optimal weight selection. At Spoteria, we are commited to developing a weight training assistant technology to monitor, detect and help correct the user's form in real-time while exercising.
+          <div class="col-lg-12 text-align: justify">
+			
+            <p class="mb-3"> 
+				Hello, this is our first blog post. Our website is now live, and we have quite a few updates to share with you since our last presentation in November. 
             </p>
+			<p class="mb-3">
+				But before that for those of you new to our project we’ll just break down what Spoteria is and what we aim to accomplish. Spoteria is designed to be a smart mirror display meant to improve your workouts. It is specifically targeted towards shoulders, as they are one of the common sources of injury during workouts for novices. Issues such as shoulder impingement (our main focus), and others can lead to limited range of movement for the shoulders and by extension for the whole arm. Given that shoulder exercises are a popular workout choice, we decided to focus on shoulder exercises only for the scope of this project. Following an iterative design procedure we explored different design approaches to combat this problem, such as wearable sensors and smart workout machines. However based on our project criteria and constraints we ultimately decided on a design involving a smart mirror display coupled with a Kinect sensor to track user exercise form, while providing them with real time visual feedback in the form of a smart mirror display.				
+			</p>
+			<p class="mb-3">
+				Project development has been well under way and there have been quite a few developments for Spoteria over the course of the winter break. The developments can be broken down by their respective components.
+			</p>
+			<p class="mb-3">
+				<b>Mechanical:</b> In terms of mechanical development preliminary design has been completed. From the design in Solidworks, to the mechanical analysis performed in ANSYS, the first physical mechanical prototype has been assembled. This is the first design prototype for the mechanical aspect of the project. For those not familiar the mechanical aspect of this project presents a TV stand type assembly which will be used to support the smart display and will work with the actuator to adjust the display height to match the user’s workout height. For next steps the mechanical assembly needs to be integrated with the linear actuator, for more details refer to the electrical section below.
+			</p>
+			<p class="mb-3">
+				<b>Software:</b> For software development the proof of concept is complete. We are able to capture users through the Kinect sensor and able to identify major joints. Furthermore in the current implementation we have designed an algorithm to be able to track the user’s joint angles, which can then be used to critique their exercise form. However there is still quite a bit of software work required for the next steps in the project as the machine learning models for exercise identification need to be developed and trained so that the exercise performed by the user can be identified, a necessary step for form critiquing.
+			</p>
+			<p class="mb-3">
+				<b>Electrical:</b> For electrical, all of the required components have been acquired, including the linear actuator. There is still quite a bit of development required on this front to test the actuator with the mechanical system, and ensure that it is functional with the TV mounted. The actuator needs to be interfaced with the user recognition software component, to be accomplished through an Arduino for the hardware side of things, so that the actuator can adjust the display height according to the height of the user. Additionally, we still need to finalize the circuit schematic for the actuator control circuit. Furthermore, CSA approval will be required for the electrical component as the actuator relies on a 12 V, 3A power supply, where the required current can be fatal if not handled correctly.
+			</p>		
+			<p class="mb-3">
+				<b>Next Steps:</b> Some of the required next steps have already been mentioned above, but looking at our immediate agenda the two main priorities would be finalizing the electric system and integrating it with the mechanical prototype. And secondly, developing the models for exercise identification. This can be considered a critical piece of our design because if this fails there is no metric to critique exercise form if the system can’t identify what exercise the user is performing. These two tasks are our immediate priorities, which we aim to accomplish by the end of January. Given that these are accomplished our project would essentially fulfill its minimal level of viable operation. 
+			</p>
+			<div style="display: block; height: 50%; text-align: center">
+              <img src="img/blog_images/week1.jpg" style="width: 50%"/>
+			  <p class="section-heading">Software development with Unity and Kinect</p>
+            </div>	
           </div>
+		  <div = class="row">
+			<div class="col-lg-12 text-align: justify">
+			<p class="mb-3">
+				<b>That’s all for this week’s blog post. If you are interested in our project and would like more info please contact us, refer to the contact section of the website, we welcome any sponsorship. Stay tuned for further updates.</b>
+			</p>
+			</div>
+		  </div>
         </div>
-        <div class="row" style="padding-bottom: 1rem">
-          <div class="col-lg-4 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto animated" data-animation="bounceInLeft" style="visibility: hidden;">
-              <img src="img/Website Images/gym_member_icon.png" style="height: 9rem; padding-bottom: 1.5rem "/>
-              <h3 class="mb-3 bold dark-gray">60 M+</h3> 
-              <p class="mb-0">Gym Memberships in North America</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto animated" data-animation="bounceInUp" style="visibility: hidden;">
-              <img src="img/Website Images/injury_icon.png" style="height: 9rem; padding-bottom: 1.5rem "/>
-              <h3 class="mb-3 bold dark-gray">500,000+</h3>
-              <p class="mb-0">Annual Workout Related Injuries</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto animated" data-animation="bounceInRight" style="visibility: hidden;">
-              <img src="img/Website Images/dollars_icon.png" style="height: 9rem; padding-bottom: 1.5rem "/>
-              <h3 class="mb-3 bold dark-gray">$2.5 M+</h3>
-              <p class="mb-0">Dollars Spent Annually on Physiotherapy</p>
-            </div>
-          </div>
-        </div>
+        
         </div>
       </div>
 
     </section>
 
+<!--
     <section class="bg-primary" id="features" style="background-color: white !important">
       <div class="container-fluid" style="padding-left: 5rem; padding-right: 5rem; text-align: center;">
         <div class="row">
@@ -252,24 +262,24 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 animated" data-animation="zoomIn" style="visibility: hidden;">
+          <div class="col-lg-6">
             <div style="display: flex; height: 100%;align-items: center">
               <img src="img/Website Images/kinect.png" style="width: 100%" />
             </div>
          </div>
-          <div class="col-lg-6 animated" data-animation="zoomIn" style="visibility: hidden;">
+          <div class="col-lg-6">
             <div style="display: flex; height: 100%; align-items: center">
               <img src="img/Website Images/turi.png" style="width: 100%" />
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 animated" data-animation="zoomIn" style="visibility: hidden;">
+          <div class="col-lg-6">
             <div style="display: flex; height: 100%;align-items: center">
               <img src="img/Website Images/Unity_Technologies_logo.svg.png" style="width: 100%" />
             </div>
          </div>
-          <div class="col-lg-6 animated" data-animation="zoomIn" style="visibility: hidden;">
+          <div class="col-lg-6">
             <div style="display: flex; height: 100%;align-items: center">
               <img src="img/Website Images/ardunio_logo.png" style="width: 100%" />
             </div>
@@ -336,12 +346,12 @@
         </div>
         <div class="row">
           <div class="col-lg-12 mr-auto text-center">
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="blog.html" style="background-color: #48a0ef">View our blog</a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#features" style="background-color: #48a0ef">View our blog</a>
           </div>
         </div>
       </div>
     </section>
-
+-->
     <section id="contact">
       <div class="container">
         <div class="row">
