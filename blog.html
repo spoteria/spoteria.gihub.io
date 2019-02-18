@@ -141,6 +141,9 @@
       <p class="mb-3">
         In order to further improve the users workout experience we have decided to develop a workout routine, which guides users through repetitions and a certain number of sets of an exercise. Specifically targeted towards new users, we plan on offering a exercise routine consisting of three sets of five shoulder press repetitions with breaks between sets and form monitoring and feedback during the entire process. At the end the user is presented with the duration of their workout their sets completed, and an overall rating which critiques the quality of their exercise form. However for the time being this is specifically focused on a shoulder press based routine. An additional exercise may be added based on the amount of time available, but we'll have to see since midterms are coming up.
       </p>
+      <p class="mb-3">
+        Another update in our project is our utilization of the linear actuator. Through trials we determined that we are unable to track the position of the actuator using just the Arduino. So in order to maintain the scope of our project requiring display adjustment for seated or standing exercises we came up with an alternate solution. The Kinect takes an initial measurement on the users height, and based on our thresholds it judges whether they are standing or seated and either places the display at max height, suitable for standing exercises, or places the display at minimum height suitable for seated exercises, as opposed to adjusting the display height during their exercise as the speed of the actuator was determined to be a major limitation in user experience, and the lack of actuator position monitoring prevents us from being able to use a controller to solve this problem.
+      </p>
       
       <div style="display: block; height: 50%; text-align: center">
               <img src="img/blog_images/week6.jpg" style="width: 50%"/>
